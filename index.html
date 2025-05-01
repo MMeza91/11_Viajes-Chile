@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" > <!--data-bs-theme="dark"-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,46 +75,82 @@
         </div>
     </header>
 
-    <section id="Quienes">
-        quienes somos: (solo visible en pantallas medianas a grandess)
-    </section>
+    <section id="Quienes" class="d-none d-md-block container-fluid text-center">
+        <h1> ¿Quienes Somos?</h1>
+        <div class="row">
+            
+            <!--Linea 1-->
+            <div class="col-12 col-md-4 p-3">
+                <div class="bg-cyan">
+                    svg
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi earum sequi explicabo, odit numquam exercitationem quis cupiditate ab libero harum eos, sint doloremque animi quos corporis eius aut ipsum quas?</p>
+            </div>
 
-    <section id="Destacados">
-        <h1 class="text-center">Destacados</h1>
-        <div class="container-fluid row ">
-            <!--Card-1-->
-            <div class="card col-12 col-md-3 m-3" style="width: 18rem;">
-                <img src="./assets/img/card1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <!--Linea 2-->
+            <div class="col-12 col-md-4 p-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi totam explicabo dolorum doloribus alias ab! Earum inventore modi officia omnis alias velit temporibus quidem aperiam fugiat eveniet qui, ab neque?</p>
+                <div class="bg-cyan">
+                    svg
                 </div>
             </div>
 
+            <!--Linea 3-->
+            <div class="col-12 col-md-4 p-3">
+                <div class="bg-cyan">
+                    svg
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, aperiam quibusdam quas natus iusto accusantium inventore dolorem voluptas blanditiis voluptatum labore vel, vero adipisci corrupti cum velit iure dicta illum!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid text-center" id="Destacados">
+        <h1 >Destacados</h1>
+        <div class="row">
+            <!--Card-1-->
+            <div class="card col-12 col-md-3 m-3 bg-cyan" style="width: 18rem;">
+                <div class="bg-cyan">
+                    <img src="./assets/img/card1.jpg" class="card-img-top" width="18rem" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                
+            </div>
+
             <!--Card-2-->
-            <div class="card col-12 col-md-3 m-3" style="width: 18rem;">
-                <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card col-12 col-md-3 m-3 bg-cyan" style="width: 18rem;">
+                <div class="bg-cyan">
+                    <img src="./assets/img/card2.jpg" class="card-img-top" width="18rem" alt="...">
+                    <div class="card-body ">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
 
             <!--Card-3-->
-            <div class="card col-12 col-md-3 m-3" style="width: 18rem;">
-                <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card col-12 col-md-3 m-3 bg-cyan" style="width: 18rem;">
+                <div class="bg-cyan">
+                    <img src="./assets/img/card3.jpg" class="card-img-top" width="18rem" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
+                
             </div>
 
             <!--Card-4-->
-            <div class="card col-12 col-md-3 m-3" style="width: 18rem;">
-                <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="bg-cyan card col-12 col-md-3 m-3" style="width: 18rem;">
+                <div class="bg-cyan">
+                    <img src="./assets/img/card4.jpg" class="card-img-top" width="18rem" alt="...">
+                    <div class="card-body bg-cyan">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
                 </div>
             </div>
               
@@ -122,11 +158,42 @@
     </section>
     
     <section id="Contacto">
-        contacto: nombre | asunto | mensaje
+        <h1 class="text-center">Contacto</h1>
+        <div class="mx-5 ">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control bg-white bs-light-text-emphasis" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input type="text" class="form-control bg-white bs-light-text-emphasis" id="asunto">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control bg-white bs-light-text-emphasis" id="mensaje" rows="3"></textarea>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        link a las redes sociales
+    <footer class="bg-cyan">
+        <div class="d-flex justify-content-around">
+            <div><p>VIAJES CHILE</p></div>
+            <div></div>
+            <div>
+                <a href="https://github.com/MMezaG91/11_Viajes-Chile">
+                    <img src="url_de_la_imagen" alt="GitHub">
+                </a>
+                <a href="www.linkedin.com/in/matias-meza/">
+                    <img src="url_de_la_imagen" alt="Linkedin">
+                </a>
+                <a href="https://x.com/?lang=es">
+                    <img src="url_de_la_imagen" alt="Twiter">
+                </a>
+                <a href="https://www.facebook.com/?locale=es_LA">
+                    <img src="url_de_la_imagen" alt="Facebook">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
