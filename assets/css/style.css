@@ -3,6 +3,10 @@
     color: black;
 }
 .bg-cyan{
-    background-color: cyan;
+    background-color: #00cdf2;
+    color: white;
+}
+.bg-black{
+    background-color: black;
     color: white;
 }
