@@ -172,28 +172,44 @@
     </section>
     
     <!-- Seccion contacto, contiene ingreso para: Nombre, Asunto y Mensaje-->
-    <section id="Contacto" class="bg-black">
+    <section class="bg-black" id="Contacto">
         <div class="pt-4 px-5">
             <h1 class="text-center letra">Contacto</h1>
             <hr>
         </div>
-        <div class="pading_contacto letra ">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control bg-white bs-light-text-emphasis" id="nombre">
+        <form class="row g-3 needs-validation pading_contacto letra" novalidate>
+            <div class="pading_contacto letra">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control bg-white bs-light-text-emphasis" id="validationTooltip01" aria-describedby="validacion_nombre" required>
+                    <div class="invalid-feedback">Indíquenos su nombre</div>
+                </div>
+    
+    
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Asunto</label>
+                    <input type="text" class="form-control bg-white bs-light-text-emphasis" id="nombre" aria-describedby="validacion_asunto" required>
+                    <div class="invalid-feedback">Indíquenos el asunto</div>
+                </div>
+    
+    
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Mensaje</label>
+                    <textarea class="form-control bg-white bs-light-text-emphasis" id="mensaje" rows="3" aria-describedby="validacion_mensaje" required></textarea>
+                    <div class="invalid-feedback">Rellene con un mensaje para nuestro equipo</div>
+                    
+                </div>
+                <!-- Boton con tooltip -->
+                <div id="liveAlertPlaceholder"></div>
+                <button type="submit" class="btn bg-cyan mb-5" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Cuéntale a nuestro equipo tu aventura soñada" id="liveAlertBtn">Enviar</button> <!--  id="liveAlertBtn" no se logró colocar el aviso-->
             </div>
-            <div class="mb-3">
-                <label for="asunto" class="form-label">Asunto</label>
-                <input type="text" class="form-control bg-white bs-light-text-emphasis" id="asunto">
-            </div>
-            <div class="pb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control bg-white bs-light-text-emphasis" id="mensaje" rows="3"></textarea>
-            </div>
-            <button type="button" class="btn bg-cyan mb-5">Enviar</button>
-
-        </div>
+        </form>
     </section>
+
+    
+   
+  
+
 
     <!-- Footer con palabra de marca y logos de rrss con redireccionamiento -->
     <footer class="bg-cyan pt-2">
