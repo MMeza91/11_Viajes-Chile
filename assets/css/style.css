@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Se resetea css */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,17 +9,18 @@
 html, body {
     height: 100%;
 }
+
+/* Letra a utilizar en pagina */
 .letra{
     font-family: Roboto;
     font-weight: 300;
 }
+/* tamaño de cards */
 .tamano{
     width: 18rem !important;
 }
-.bg-white{
-    background-color: white;
-    color: black;
-}
+
+
 .bg-cyan{
     background-color: #00cdf2 !important;
     color: white !important;
@@ -27,11 +29,12 @@ html, body {
     background-color: black;
     color: white;
 }
-
+/* elimina subrayado de hipervinculo */
 a{
     text-decoration: none !important;
 }
 
+/* espacios dentro de la pagina */
 .pading_quienes{
     padding: 0% 8% 0% 8%;
 }
