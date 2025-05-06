@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="./assets/js/main.js" defer></script>
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- JQuery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Popper entregado por bootstrap --><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- JS de bootstrap --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    <!-- CSS de Bootstrap --><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md  tope navbar-dark fixed-top"> <!-- style="background-color: black;"-->
+        <!-- navbar sin fondo, este navbar toma el fondo del sector del html donde nos encontremos, partiendo por el carrusel -->
+        <nav class="navbar navbar-expand-md  tope navbar-dark fixed-top">
             <!--Contenedor responsivo-->
             <div class="container-fluid">
               <!-- imagen del logo -->
@@ -77,22 +78,26 @@
 
     <section id="Quienes" class="d-none d-md-block container-fluid text-center bg-black">
         <div class="pt-4">
-            <h1> ¿Quienes Somos?</h1>
-            <hr>
+            <h1 class="letra"> ¿Quienes Somos?</h1>
+            <hr class="margin_hr">
         </div>
-        <div class="row">
+        <div class="row pading_quienes letra">
             
             <!--Linea 1-->
             <div class="col-12 col-md-4 p-3">
                 <div class="bg-cyan p-1">
                     <svg version="1.1" id="_x32_" height="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#fffff" transform="rotate(90)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css">  .st0{fill:#ffffff;}  </style> <g> <path class="st0" d="M488.063,283.172l-178.016-83.078V68.938C310.047,37.391,287.547,0,256,0s-54.047,37.391-54.047,68.938 v131.156L23.938,283.172c-3.922,2.391-7.141,8.109-7.141,12.703v56.703c0,4.609,3.563,7.172,7.922,5.703l188.219-49.188v119.281 c0,0-30.609,22.438-48.953,34.688c-18.344,12.219-10.203,36.688,4.078,36.688c14.266,0,68.563,0,68.563,0S245.797,512,256,512 s19.375-12.25,19.375-12.25s54.297,0,68.563,0c14.281,0,22.422-24.469,4.078-36.688c-18.344-12.25-48.953-34.688-48.953-34.688 V309.094l188.203,49.188c4.375,1.469,7.938-1.094,7.938-5.703v-56.703C495.203,291.281,492,285.563,488.063,283.172z"></path> </g> </g></svg>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi earum sequi explicabo, odit numquam exercitationem quis cupiditate ab libero harum eos, sint doloremque animi quos corporis eius aut ipsum quas?</p>
+                <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat tempore atque facilis, odio eos quis nisi eius error ad eveniet autem nesciunt explicabo iusto, optio vitae porro beatae iure quidem!
+                Veritatis mollitia aperiam, alias error in maxime eos asperiores esse laborum eveniet dignissimos quis atque facilis vero velit doloribus! Molestias adipisci explicabo hic! Doloribus tenetur voluptas qui quaerat, aut similique.
+                Possimus officia dignissimos id aperiam voluptatibus repellat, quas molestias nam voluptatum aliquid deleniti quaerat consequatur velit tempore obcaecati, ipsum officiis doloribus! Consequuntur sapiente error eaque quidem accusamus, nulla at atque?</p>
             </div>
 
             <!--Linea 2-->
             <div class="col-12 col-md-4 p-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi totam explicabo dolorum doloribus alias ab! Earum inventore modi officia omnis alias velit temporibus quidem aperiam fugiat eveniet qui, ab neque?</p>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati animi, consequuntur dolorem dolores culpa reiciendis, consectetur labore fugit eligendi deleniti voluptate maxime cum excepturi sit magni voluptates commodi tempore sed.
+                Atque quia quae numquam sit perspiciatis quod alias amet saepe ipsa recusandae fugiat illum dolor aperiam explicabo similique repudiandae unde, nulla sed. Velit nisi neque perferendis pariatur recusandae quos vitae.
+                Sunt, error reiciendis. Labore numquam debitis, reiciendis sequi praesentium adipisci quibusdam culpa, accusantium eligendi, optio deleniti vero. Illum suscipit, debitis excepturi odio, voluptatibus nihil vero quae asperiores placeat tempore pariatur!</p>
                 <div class="bg-cyan p-1">
                     <svg viewBox="0 0 17 17" height="25px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="si-glyph si-glyph-mountain" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>845</title> <defs> </defs> <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <path d="M8.012,1.062 L4.035,8.87 L2.709,7.569 C2.709,7.569 -0.305,14 0.063,14 L15.965,14 L15.965,13.998 L12.627,6.898 L11.644,7.51 L8.012,1.062 L8.012,1.062 Z M5.611,7.521 L8.062,2.77 L10.347,6.851 L9.361,7.521 L8.021,6.233 L5.611,7.521 L5.611,7.521 Z" fill="#ffffff" class="si-glyph-fill"> </path> </g> </g></svg>
                 </div>
@@ -103,56 +108,58 @@
                 <div class="bg-cyan p-1">
                     <svg fill="#ffffff" height="25px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M416 320h-96c-17.6 0-32-14.4-32-32s14.4-32 32-32h96s96-107 96-160-43-96-96-96-96 43-96 96c0 25.5 22.2 63.4 45.3 96H320c-52.9 0-96 43.1-96 96s43.1 96 96 96h96c17.6 0 32 14.4 32 32s-14.4 32-32 32H185.5c-16 24.8-33.8 47.7-47.3 64H416c52.9 0 96-43.1 96-96s-43.1-96-96-96zm0-256c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zM96 256c-53 0-96 43-96 96s96 160 96 160 96-107 96-160-43-96-96-96zm0 128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z"></path></g></svg>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, aperiam quibusdam quas natus iusto accusantium inventore dolorem voluptas blanditiis voluptatum labore vel, vero adipisci corrupti cum velit iure dicta illum!</p>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo optio quasi, veniam aliquam consequatur facere distinctio similique perspiciatis aspernatur enim accusantium provident facilis officia odit nam voluptatem repudiandae laborum voluptatum!
+                Deserunt, quaerat necessitatibus? Ullam, atque molestias. Laborum cupiditate consectetur minima a aut deserunt eaque velit ex, error id, nisi illum tenetur similique quam dolor corrupti dignissimos temporibus, quia facere sit.
+                Doloremque veritatis quibusdam culpa hic consectetur in eum alias ipsum, accusamus, itaque corporis tenetur tempore facere temporibus quasi deserunt sapiente ex provident corrupti velit sit ut debitis? Ut, similique minus?</p>
             </div>
         </div>
     </section>
 
     <section class="container-fluid text-center bg-black" id="Destacados">
-        <h1 class="pt-4 pb-4">Destacados</h1>
-        <div class="row justify-content-center">
+        <h1 class="pt-4 pb-4 letra">Destacados</h1>
+        <div class="row justify-content-center letra">
             <!--Card-1-->
-            <div class="card px-0 col-12 col-md-3 m-3"  style="width: 18rem; background-color: #00cdf2;">
+            <div class="card px-0 col-12 col-md-3 m-3 tamano">
                 <div class="bg-cyan">
                     <img src="./assets/img/card1.jpg" class="card-img-top" height="200rem" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                        <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur numquam dolorem nobis dolorum sit exercitationem </p>
                     </div>
                 </div>
                 
             </div>
 
             <!--Card-2-->
-            <div class="card px-0 col-12 col-md-3 m-3 bg-cyan" style="width: 18rem; background-color: #00cdf2;">
+            <div class="card px-0 col-12 col-md-3 m-3 bg-cyan tamano">
                 <div class="bg-cyan">
                     <img src="./assets/img/card2.jpg" class="card-img-top" height="200rem" alt="...">
                     <div class="card-body ">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Consectetur adipisicing elit</h5>
+                        <p class="card-text text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit sequi, dolorum repellendus quas facilis nobis tenetur aliquid </p>
                     </div>
                 </div>
             </div>
 
             <!--Card-3-->
-            <div class="card px-0 col-12 col-md-3 m-3 bg-cyan" style="width: 18rem; background-color: #00cdf2;">
+            <div class="card px-0 col-12 col-md-3 m-3 bg-cyan tamano">
                 <div class="bg-cyan">
                     <img src="./assets/img/card3.jpg" class="card-img-top" height="200rem" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title"> Necessitatibus tempore consequatur dolorum amet</h5>
+                        <p class="card-text text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus tempore consequatur dolorum amet odio</p>
                     </div>
                 </div>
                 
             </div>
 
             <!--Card-4-->
-            <div class="card px-0 col-12 col-md-3 m-3" style="width: 18rem; background-color: #00cdf2;">
+            <div class="card bg-cyan px-0 col-12 col-md-3 m-3 tamano" >
                 <div class="bg-cyan">
                     <img src="./assets/img/card4.jpg" class="card-img-top" height="200rem" alt="...">
                     <div class="card-body bg-cyan">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <h5 class="card-title">Veritatis quisquam</h5>
+                        <p class="card-text text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quas nostrum illo impedit aperiam possimus harum </p>
                     </div>
                 </div>
             </div>
@@ -163,11 +170,11 @@
     </section>
     
     <section id="Contacto" class="bg-black">
-        <div class="pt-4">
-            <h1 class="text-center">Contacto</h1>
+        <div class="pt-4 px-5">
+            <h1 class="text-center letra">Contacto</h1>
             <hr>
         </div>
-        <div class="mx-5 ">
+        <div class="pading_contacto letra ">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control bg-white bs-light-text-emphasis" id="nombre">
@@ -180,7 +187,7 @@
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea class="form-control bg-white bs-light-text-emphasis" id="mensaje" rows="3"></textarea>
             </div>
-            <button type="button" class="btn text-light mb-5" style="background-color: #00cdf2;">Enviar</button>
+            <button type="button" class="btn bg-cyan mb-5">Enviar</button>
 
         </div>
     </section>

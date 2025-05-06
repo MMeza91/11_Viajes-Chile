@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,15 +8,20 @@
 html, body {
     height: 100%;
 }
-
-
+.letra{
+    font-family: Roboto;
+    font-weight: 300;
+}
+.tamano{
+    width: 18rem !important;
+}
 .bg-white{
     background-color: white;
     color: black;
 }
 .bg-cyan{
-    background-color: #00cdf2;
-    color: white;
+    background-color: #00cdf2 !important;
+    color: white !important;
 }
 .bg-black{
     background-color: black;
@@ -24,3 +31,12 @@ html, body {
 a{
     text-decoration: none !important;
 }
+
+.pading_quienes{
+    padding: 0% 8% 0% 8%;
+}
+.margin_hr{
+    margin: 2% 8% 1% 8% !important;
+}
+.pading_contacto{
+    padding: 0% 9% 0% 9%;
