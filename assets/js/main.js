@@ -16,13 +16,6 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('Mensaje enviado. Te contactaremos dentro de las próximas 48 horas hábiles.', 'success')
-  })
-}
-
 
 
 (() => {
@@ -39,7 +32,8 @@ if (alertTrigger) {
           event.stopPropagation()
           
         }else{
-            
+          appendAlert('Mensaje enviado. Te contactaremos dentro de las próximas 48 horas hábiles.', 'success');
+          setInterval(console.log("Mensaje será enviado a nuestros sistemas"),3000);
         }
   
         form.classList.add('was-validated')
