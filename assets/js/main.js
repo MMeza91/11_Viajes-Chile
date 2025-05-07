@@ -1,8 +1,11 @@
+/* Constantes entregadas por bootstrap */
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
 
+/* Se crea escenario donde aparecerá aviso al enviar consulta */
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
@@ -17,7 +20,7 @@ const appendAlert = (message, type) => {
 }
 
 
-
+/* Validacion de espacios rellenados */
 (() => {
     'use strict'
   
@@ -33,7 +36,7 @@ const appendAlert = (message, type) => {
           
         }else{
           appendAlert('Mensaje enviado. Te contactaremos dentro de las próximas 48 horas hábiles.', 'success');
-          setInterval(console.log("Mensaje será enviado a nuestros sistemas"),3000);
+          event.preventDefault()
         }
   
         form.classList.add('was-validated')
